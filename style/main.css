@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: hsl(30deg, 38%, 92%);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0deg, 0%, 100%);
+  width: 60rem;
+  border-radius: 0.85rem;
+}
+
+.imgContainer img {
+  width: 30rem;
+  border-top-left-radius: 0.85rem;
+  border-bottom-left-radius: 0.85rem;
+}
+
+.productDesc {
+  padding: 3rem 3.25rem;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.desc {
+  display: grid;
+  gap: 2rem;
+}
+.desc h1 {
+  font-size: 1.3rem;
+  color: hsl(228deg, 12%, 48%);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5rem;
+}
+.desc h2 {
+  font-size: 3.25rem;
+  color: hsl(212deg, 21%, 14%);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 3.25rem;
+}
+.desc p {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 2.25rem;
+}
+
+.price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.price .discounted {
+  font-size: 3.25rem;
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+.price .original {
+  font-size: 1.4rem;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+}
+
+.addToCart {
+  background: hsl(158deg, 36%, 37%);
+  padding: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  border-radius: 0.85rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+.addToCart:hover {
+  cursor: pointer;
+  background: #1a4031;
+}
+
+@media (max-width: 425px) {
+  body {
+    padding: 2.75rem 1.6rem;
+  }
+  main {
+    flex-direction: column;
+    width: auto;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .imgContainer img {
+    width: inherit;
+    border-top-right-radius: 0.85rem;
+    border-bottom-left-radius: 0rem;
+  }
+  .productDesc {
+    padding: 2.25rem 2.5rem;
+    gap: 1.75rem;
+  }
+  .desc {
+    gap: 1.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
